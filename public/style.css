@@ -1,0 +1,74 @@
+body{
+	padding: 5px; 
+	font-family: sans-serif; 
+	/*border: solid black 1px;*/
+}
+
+#header{
+
+}
+
+
+/* for completed (crossed out) items on to-do lists*/
+.checked-off{
+    text-decoration: line-through;
+    color: gray;
+}
+
+a{
+	padding: 5px;
+}
+
+.not-checked-off{
+	text-decoration: none;
+	color: default;
+}
+
+#focus{
+	padding: 5px;
+	/*border: solid black 1px;*/
+}
+
+#checkList{
+	font-size: 150%;
+	line-height: 155%;
+}
+
+#morning{
+	padding: 0px 5px;
+	float: left;
+	margin-right: 10px;
+	/*border: solid black 1px;*/
+}
+
+#morning.h2, #today.h2{
+	text-decoration: none;
+}
+
+#today{
+	padding: 0px 5px;
+	float: left;
+	/*border: solid black 1px;*/
+	} 
+
+#how{
+	clear: both;
+	padding-top: 25px;
+	max-width: 600px;
+}
+
+#how_displayText {
+	display: none;
+}
+
+#advice{
+	padding: 10px;
+	font-size: 90%;
+	color: gray;
+	max-width: 500px;
+}
+
+/* div, li{
+	/*border: solid black 1px;*/
+} */
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Life by Design</title>
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css"> 
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="script.js"></script> <!--src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"-->
+    </head>
+
+    <body>
+
+        <!-- Site Navigation -->
+
+        <!--Start Day -->
+        <div id="header">
+            <h1>Life by design.</h1>
+            <div id="links">
+                <a target="blank" href="https://docs.google.com/document/d/1Yn6DXkj_hQJPQkfWm0qgfiOvI7MRMBaSQqxPXFzhaCw/edit">journal</a>
+                <a target="blank" href="https://docs.google.com/document/d/1LFdVOQgrQo9ZlI-7Hh3JTS7ioReUfik9KlCUnnz2xyE/edit">give thanks</a>
+                <a target="blank" href="https://app.asana.com/0/2906186739508/2906186739508">asana</a>
+                <a target="blank" href="http://www.brendandmcdonald.com/">blog</a>
+                <a target="blank" href="https://www.google.com/contacts/u/0/?hl=en&tab=mC#contacts">contacts</a>
+            </div>
+        </div>
+
+        <div id="focus">
+            <h3>Focus List (include when and where)</h3>
+            <form name="priority">
+              <input type="text" value="Priority #1" name="priority1">
+              <input type="text" value="Priority #2" name="priority2">
+              <input type="text" value="Priority #3" name="priority3">
+              <input type="button" value="submit" onclick="processForm()">
+            </form>
+
+            <div id="checkList"></div>
+        </div>
+        
+        <h3 onclick='displayAdvice()'>Get advice</h3>
+        <div id='advice'></div> 
+
+
+        <div id="morning">
+
+            <h3>Morning Easy Wins</h3>
+            
+            <div id="1">
+                <input type="checkbox" onclick="crossedOut(1)">do 15 jumping jacks
+            </div>
+            <div id="2">
+                <input type="checkbox" onclick="crossedOut(2)">clean room for day
+            </div>  
+            <div id="3">
+                <input type="checkbox" onclick="crossedOut(3)">write in thankfulness journal
+            </div>  
+            <div id="4">
+                <input type="checkbox" onclick="crossedOut(4)">read Daily Checklist
+            </div>    
+            <div id="5">
+                <input type="checkbox" onclick="crossedOut(5)">plan out day: personal top 3 (always ranks above intuit)
+            </div>  
+            <div id="6">
+                <input type="checkbox" onclick="crossedOut(6)">plan out day: intuit top 3 (always ranks below personal)
+            </div>  
+            <div id="7">
+                <input type="checkbox" onclick="crossedOut(7)">make video or journal entry: daily success plan
+            </div>  
+            <div id="8">
+                <input type="checkbox" onclick="crossedOut(8)">make list of 10 easy wins for the day
+            </div>
+                
+        </div>    
+
+        <div id="today">
+
+            <h3>Easy Wins</h3>
+
+            <div id="10">
+                <input type="checkbox" onclick="crossedOut(10)">shower
+            </div>
+            <div id="11">
+                <input type="checkbox" onclick="crossedOut(11)">brush & floss teeth: am
+            </div>
+            <div id="12">
+                <input type="checkbox" onclick="crossedOut(12)">apply morning acne creams
+            </div>
+            <div id="13">
+                <input type="checkbox" onclick="crossedOut(13)">do 5 exercises on codecademy
+            </div>
+            <div id="14">
+                <input type="checkbox" onclick="crossedOut(14)">exercise
+            </div>
+            <div id="15">
+                <input type="checkbox" onclick="crossedOut(15)">apply evening acne creams
+            </div>
+            <div id="16">
+                <input type="checkbox" onclick="crossedOut(16)">brush & floss teeth: pm
+            </div>
+            <div id="17">
+                <input type="checkbox" onclick="crossedOut(17)">connect with 5 people every day (email, text, phone, at least 2 in person)
+            </div>
+            <div id="18">
+                <input type="checkbox" onclick="crossedOut(18)">make video or journal entry: day in review
+            </div>
+            <div id="more">
+            </div>
+            <form name="newWin">
+              <input type="text" value="new easy win" name="newWin">
+              <input type="button" value="submit" onclick="processForm2()">
+            </form>
+           
+        </div>
+
+        <div id="how">
+            <h3><a id="how_toggleText" href="javascript:toggleText();">the how</a></h3>
+            <div id="how_displayText">
+                <p>
+                    Start goals for the day before noon--fail early, fail better.
+                    Current: ship something to customers, work out, connect with 5 people
+                </p>
+                <p>
+                    Healthy. <em>Don't be a cog: Don't ignore your dreams, don't work too much, say what you think, cultivate friendships, and be happy. :-)</em>
+                    Eat 6 meals; have 30g protein within 30 min of waking up; drink 1ga water; record hours slept (>7.5); take 30-60min to relax.
+                </p>
+                <p>
+                    Active. <em>Seize the moment.</em> Exercise:[input something like Cardio/Lift/Resistance/Sport]
+                </p>
+                <p>
+                    Future. <em>Compound effort moves mountains.</em> 
+                    Fail at something: ____________________ Create something [item you ship]: ________________________
+                </p>
+                <p>
+                    Social. <em>If you&#39;re not failing, you&#39;re not trying.</em>
+                    activity (check at least one)
+                    Call /talk at length with friend/fam ___    Connect with new people ___   Tell someone thank you ___
+                </p>
+                <p>
+                    Notes: to get stuff done, be specific, seize the moment to act on your goals, know exactly how far you have left to go (measure how you’re doing), be a realistic optimist, focus on being better rather than being good, do one thing at a time, make it easy to start (do some stuff in advance [have a known sequence--I don’t have to decide in advance the order in which I do stuff]), have grit, build willpower muscle, don't tempt fate, and focus on what you will do (not what you won't do). Focus on next 30 sec.
+                </p>
+                <p>
+                    zest: have great enthusiasm and energy; grit: keep resolve when faced with unpleasant duty or task; self-control: mastering one’s impulses; social intelligence: get along well with others, and have them coordinate with you; gratitude: express thanks to those who have benefited you; optimism: expect good things; curiosity: explore the unknown with relish
+                </p>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
