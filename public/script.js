@@ -72,7 +72,12 @@ var advice = [
     ["To get good at a new thing, copy something you admire.  Want to paint? Copy picasso. Want to code? Recreate google calendar.  Want to learn web design? Copy a cool site’s layout.  Want to learn piano? Play Mozart. ",""],
     ["There is a limit to testing.  It won’t get you to revolutionary change, but it can get you to emulative change.",""],
     ["What is the work you can’t not do?",""],
-    ["",""],
+    ["Compound effort moves mountains.",""],
+    ["If you're not failing, you're not trying hard enough.",""],
+    ["Seize the moment.",""],
+    ["zest: have great enthusiasm and energy; grit: keep resolve when faced with unpleasant duty or task; self-control: mastering one’s impulses; social intelligence: get along well with others, and have them coordinate with you; gratitude: express thanks to those who have benefited you; optimism: expect good things; curiosity: explore the unknown with relish",""],
+    ["Don't get so fond of where you've been that you loose sight of where you're going.",""],
+    ["Stick to your plan. It works.",""],
     //["",""],
 ];
 
