@@ -66,6 +66,13 @@ var advice = [
     ["Begin, be bold, and venture to be wise","-Horace"],
     ["Make your own luck",""],
     ["Fail fast and frequently. Your failure to success ratio is constant over time. The only way to have more success is to fail more often."," "],
+    ["What’s the smallest, fastest way you could test this?",""],
+    ["The fastest way to do what you think can’t be done is to hang out with those who are already doing it",""],
+    ["You are the average of the 5 people you spend the most time with",""],
+    ["To get good at a new thing, copy something you admire.  Want to paint? Copy picasso. Want to code? Recreate google calendar.  Want to learn web design? Copy a cool site’s layout.  Want to learn piano? Play Mozart. ",""],
+    ["There is a limit to testing.  It won’t get you to revolutionary change, but it can get you to emulative change.",""],
+    ["What is the work you can’t not do?",""],
+    ["",""],
     //["",""],
 ];
 
