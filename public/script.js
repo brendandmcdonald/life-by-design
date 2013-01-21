@@ -26,7 +26,7 @@ var z = 0;
 function processForm2() {
 
     z++;
-    var listItem = document.today.newWin.newWin.value;
+    var listItem = document.newWin.winDescription.value;
     
     var listed = '<div id="item' + z + '"><input type="checkbox" onclick="crossedOut(\'item'+ i + '\')" />' + listItem + '</div>';
 
@@ -78,6 +78,21 @@ var advice = [
     ["zest: have great enthusiasm and energy; grit: keep resolve when faced with unpleasant duty or task; self-control: mastering one’s impulses; social intelligence: get along well with others, and have them coordinate with you; gratitude: express thanks to those who have benefited you; optimism: expect good things; curiosity: explore the unknown with relish",""],
     ["Don't get so fond of where you've been that you loose sight of where you're going.",""],
     ["Stick to your plan. It works.",""],
+    ["Never let your persistence and passion turn into stubbornness and ignorance.","-Anthony J. D'Angelo"],
+    ["Nothing in this world can take the place of persistence. Talent will not; nothing is more common than unsuccessful people with talent. Genius will not; unrewarded genius is almost a proverb. Education will not; the world is full of educated failures. Persistence and determination alone are omnipotent.","-Calvin Coolidge"],
+    ["Keep away from people who belittle your ambitions. Small people always do that, but the really great make you feel that you, too, can become great.","-Mark Twain"],
+    ["Nobody's a natural. You work hard to get good and then work to get better. It's hard to stay on top.","-Paul Coffey, NHL Star"],
+    ["Thankfully, perseverance is a good substitute for talent.","-Steve Martin"],
+    ["The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of determination.","-Vince Lombardi"],
+    ["Adhere to your purpose and you will soon feel as well as you ever did. On the contrary, if you falter, and give up, you will lose the power of keeping any resolution, and will regret it all your life.","-Abraham Lincoln"],
+    ["Test fast, fail fast, adjust fast.","-Tom Peters"],
+    ["Are you placing enough interesting, freakish, long shot, weirdo bets?","-Tom Peters"],
+    ["Only those who risk going too far can possibly find out how far they can go.","-T.S. Eliot"],
+    ["The secret to my success is that I bit off more than I could chew and chewed as fast as I could.","-Paul Hogan"],
+    ["Life is being on the wire, everything else is just waiting.","-Karl Wallenda"],
+    ["People will rise to meet seemingly insurmountable obstacles and challenges if they understand the worthiness of the personal sacrifices and effort. Supporting that understanding must be mentors who provide leadership; without both ingredients, a cause will go unrealized and a mission is likely to fail.","-Glenn R. Jones"],
+    ["If you chase two rabbits, both will escape",""],
+    ["Here is the prime condition of success: Concentrate your energy, thought and capital exclusively upon the business in which you are engaged. Having begun on one line, resolve to fight it out on that line, to lead in it, adopt every improvement, have the best machinery, and know the most about it.","-Andrew Carnegie"],
     //["",""],
 ];
 
