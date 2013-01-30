@@ -1,3 +1,32 @@
+//functionality:    hide/show sections of the site
+//                  hide/show directions
+//                  show one of a list of quotes to live by
+//                  save changes to database so I can access updated list anywhere 
+
+$(document).ready(function(){
+
+    $('#hero-header').mouseenter(function(){
+        $('#hero-header').fadeTo('fast', .5)
+    });
+    $('#hero-header').mouseleave(function(){
+        $('#hero-header').fadeTo('fast', 1)
+    })
+
+    $('#showE').click(function(){
+        $('encouragement').fadeOut();
+    });
+
+
+    //hides or shows focus directions if header is moused over
+    $('#focus-header').mouseenter(function(){
+        $('#focus-directions').fadeToggle(); //o('fast', .5);
+    });
+    $('#focus-header').mouseleave(function(){
+        $('#focus-directions').fadeToggle(); //('fast', 0);
+    })
+});
+
+
 var i = 0;
 
 function processForm() {
@@ -63,19 +92,19 @@ var advice = [
     ["Don't be a cog: Don't ignore your dreams, don't work too much, say what you think, cultivate friendships, and be happy.", "-Paul Graham"],
     ["Bold knaves thrive without one grain of sense, but good men starve for want of impudence.","-John Dryden"],
     ["I want to take my rightful share of life by force, I want to give lavishly, I want love to flow from my heart, to ripen and bear fruit. There are many horizons that must be visited, fruit that must be plucked, books read, and white pages in the scrolls of life to be inscribed with vivid sentences in a bold hand.","Tayeb Salih (A Season of Migration to the North)"],
-    ["Begin, be bold, and venture to be wise","-Horace"],
-    ["Make your own luck",""],
+    ["Begin, be bold, and venture to be wise.","-Horace"],
+    ["Make your own luck.",""],
     ["Fail fast and frequently. Your failure to success ratio is constant over time. The only way to have more success is to fail more often."," "],
     ["What’s the smallest, fastest way you could test this?",""],
-    ["The fastest way to do what you think can’t be done is to hang out with those who are already doing it",""],
-    ["You are the average of the 5 people you spend the most time with",""],
+    ["The fastest way to do what you think can’t be done is to hang out with those who are already doing it.",""],
+    ["You are the average of the 5 people with whom you spend the most time.",""],
     ["To get good at a new thing, copy something you admire.  Want to paint? Copy picasso. Want to code? Recreate google calendar.  Want to learn web design? Copy a cool site’s layout.  Want to learn piano? Play Mozart. ",""],
     ["There is a limit to testing.  It won’t get you to revolutionary change, but it can get you to emulative change.",""],
     ["What is the work you can’t not do?",""],
     ["Compound effort moves mountains.",""],
     ["If you're not failing, you're not trying hard enough.",""],
     ["Seize the moment.",""],
-    ["zest: have great enthusiasm and energy; grit: keep resolve when faced with unpleasant duty or task; self-control: mastering one’s impulses; social intelligence: get along well with others, and have them coordinate with you; gratitude: express thanks to those who have benefited you; optimism: expect good things; curiosity: explore the unknown with relish",""],
+    ["zest: have great enthusiasm and energy; grit: keep resolve when faced with unpleasant duty or task; self-control: mastering one’s impulses; social intelligence: get along well with others, and have them coordinate with you; gratitude: express thanks to those who have benefited you; optimism: expect good things; curiosity: explore the unknown with relish.",""],
     ["Don't get so fond of where you've been that you loose sight of where you're going.",""],
     ["Stick to your plan. It works.",""],
     ["Never let your persistence and passion turn into stubbornness and ignorance.","-Anthony J. D'Angelo"],
@@ -91,8 +120,14 @@ var advice = [
     ["The secret to my success is that I bit off more than I could chew and chewed as fast as I could.","-Paul Hogan"],
     ["Life is being on the wire, everything else is just waiting.","-Karl Wallenda"],
     ["People will rise to meet seemingly insurmountable obstacles and challenges if they understand the worthiness of the personal sacrifices and effort. Supporting that understanding must be mentors who provide leadership; without both ingredients, a cause will go unrealized and a mission is likely to fail.","-Glenn R. Jones"],
-    ["If you chase two rabbits, both will escape",""],
+    ["Focus. If you chase two rabbits, both will escape.",""],
     ["Here is the prime condition of success: Concentrate your energy, thought and capital exclusively upon the business in which you are engaged. Having begun on one line, resolve to fight it out on that line, to lead in it, adopt every improvement, have the best machinery, and know the most about it.","-Andrew Carnegie"],
+    ["You are the average of the 5 people you spend the most time with.",""],
+    ["On choices: what is most likely to change your life in a good way?","~"],
+    ["Don't give a fuck--break social norms often, cultivate discomfort, stretch yourself. What you fear to do is what you must do.",""],
+    ["If today was the last day of your life, how would you be spending it?",""],
+    ["Smile. Rigt now--smile. Seriously. Isn't that better?",""],
+    ["You've come a long way, baby.",""],
     //["",""],
 ];
 

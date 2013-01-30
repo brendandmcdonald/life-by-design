@@ -4,8 +4,14 @@ body{
 	/*border: solid black 1px;*/
 }
 
-#header{
+img{
+	float:  left;
+	border: solid black 1px;
+}
+h3{}
 
+#focus-directions{
+	display: none;
 }
 
 

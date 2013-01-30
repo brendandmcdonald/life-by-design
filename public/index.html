@@ -5,16 +5,19 @@
         <title>Life by Design</title>
         <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css"> 
         <link rel="stylesheet" href="style.css"/>
-        <script type="text/javascript" src="script.js"></script> <!--src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+        <script type="text/javascript" src=script.js></script>
     </head>
 
     <body>
+
+        
 
         <!-- Site Navigation -->   
 
         <!--Start Day -->
         <div id="header">
-            <h1>Life by design.</h1>
+            <h1 id="hero-header">Life by design.</h1>
             <div id="links">
                 <a target="blank" href="https://docs.google.com/document/d/1Yn6DXkj_hQJPQkfWm0qgfiOvI7MRMBaSQqxPXFzhaCw/edit">journal</a>
                 <a target="blank" href="https://docs.google.com/document/d/1LFdVOQgrQo9ZlI-7Hh3JTS7ioReUfik9KlCUnnz2xyE/edit">give thanks</a>
@@ -25,7 +28,12 @@
         </div>
 
         <div id="focus">
-            <h3>Focus List (include when and where)</h3>
+            <h3 id="focus-header">Focus List</h3>
+            <div id="focus-directions">
+                <p> <em>Include when and where you'll accomplish the goal.</em></p>
+                <p><em>Eg: I will reply to all of my UK travel emails at 10pm at my kitchen table</em></p>
+                <p><em>Unless impossible, do the top three things before anything else.</em></p>
+            </div>
             <form name="priority">
               <input type="text" value="Priority #1" name="priority1">
               <input type="text" value="Priority #2" name="priority2">
@@ -36,7 +44,7 @@
             <div id="checkList"></div>
         </div>
         
-        <h3 onclick='displayAdvice()'>Get advice</h3>
+        <h4><a onclick='displayAdvice()'>Thoughtful Quotes</a></h4>
         <div id='advice'></div> 
 
 
@@ -102,6 +110,9 @@
             <div id="18">
                 <input type="checkbox" onclick="crossedOut(18)">make video or journal entry: day in review
             </div>
+            <div id="19">
+                <input type="checkbox" onclick="crossedOut(19)">connect with someone you care about (friend, family member)
+            </div>
             <div id="more">
             </div>
             <form name="newWin">
@@ -112,7 +123,7 @@
         </div>
 
         <div id="how">
-            <h3><a id="how_toggleText" href="javascript:toggleText();">the how</a></h3>
+            <h3><a id="how_toggleText" href="javascript:toggleText();">Process.</a></h3>
             <div id="how_displayText">
                 <p>
                     Start goals for the day before noon--fail early, fail better.
@@ -120,19 +131,19 @@
                 </p>
                 <p>
                     <strong>Healthy</strong>
-                    Eat 6 meals; have 30g protein within 30 min of waking up; drink 1ga water; record hours slept (>7.5); take 30-60min to relax.
+                    Eat 6 meals; have 30g protein within 30 min of waking up; drink 1ga water; sleep 7.5h+; take 30-60min to relax.
                 </p>
                 <p>
-                    <strong>Active.</strong> Exercise:[input something like Cardio/Lift/Resistance/Sport]
+                    <strong>Active.</strong> Exercise:Cardio/Lift/Resistance/Team Sport
                 </p>
                 <p>
                     <strong>Future.</strong>
-                    Fail at something: ____________________ Create something [item you ship]: ________________________
+                    Fail at something; Create something [item you ship]
                 </p>
                 <p>
                     <strong>Social.</strong>
-                    activity (check at least one)
-                    Call /talk at length with friend/fam ___    Connect with new people ___   Tell someone thank you ___
+                    Do at least one:
+                    Call/talk at length with friend/fam ___    Connect with new people ___   Tell someone thank you ___
                 </p>
                 <p>
                     Notes: to get stuff done, be specific, seize the moment to act on your goals, know exactly how far you have left to go (measure how you’re doing), be a realistic optimist, focus on being better rather than being good, do one thing at a time, make it easy to start (do some stuff in advance [have a known sequence--I don’t have to decide in advance the order in which I do stuff]), have grit, build willpower muscle, don't tempt fate, and focus on what you will do (not what you won't do). Focus on next 30 sec.
