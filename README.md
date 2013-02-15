@@ -1,0 +1,1 @@
+I wish to live deliberately, so I created a lightweight web app that helps me do just that.

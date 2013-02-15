@@ -4,7 +4,7 @@ get '/' do
 	File.read(File.join('public', 'index.html'))
 end
 
-post '/quotes' do
+get '/quotes' do
 	File.read(File.join('quotes', 'quotes.html'))
 end
 
