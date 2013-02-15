@@ -19,10 +19,10 @@ $(document).ready(function(){
 
     //hides or shows focus directions if header is moused over
     $('#focus-header').mouseenter(function(){
-        $('#focus-directions').fadeToggle(); //o('fast', .5);
+        $('#focus-directions').fadeToggle('slow'); //o('fast', .5);
     });
     $('#focus-header').mouseleave(function(){
-        $('#focus-directions').fadeToggle(); //('fast', 0);
+        $('#focus-directions').fadeToggle("slow"); //('fast', 0);
     })
 });
 
