@@ -5,7 +5,7 @@ get '/' do
 end
 
 get '/quotes' do
-	File.read(File.join('quotes', 'quotes.html'))
+	File.read(File.join('public', 'quotes.html'))
 end
 
 get '/topiary' do

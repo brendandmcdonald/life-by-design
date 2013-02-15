@@ -5,25 +5,10 @@
 
 $(document).ready(function(){
 
-    $('#hero-header').mouseenter(function(){
-        $('#hero-header').fadeTo('fast', .5)
-    });
-    $('#hero-header').mouseleave(function(){
-        $('#hero-header').fadeTo('fast', 1)
-    })
-
-    $('#showE').click(function(){
-        $('encouragement').fadeOut();
-    });
-
-
     //hides or shows focus directions if header is moused over
-    $('#focus-header').mouseenter(function(){
-        $('#focus-directions').fadeToggle('slow'); //o('fast', .5);
+    $('#focus-header').click(function(){
+        $('#focus-directions').fadeToggle('fast'); //o('fast', .5);
     });
-    $('#focus-header').mouseleave(function(){
-        $('#focus-directions').fadeToggle("slow"); //('fast', 0);
-    })
 });
 
 
@@ -98,19 +83,18 @@ var advice = [
     ["What’s the smallest, fastest way you could test this?",""],
     ["The fastest way to do what you think can’t be done is to hang out with those who are already doing it.",""],
     ["You are the average of the 5 people with whom you spend the most time.",""],
-    ["To get good at a new thing, copy something you admire.  Want to paint? Copy picasso. Want to code? Recreate google calendar.  Want to learn web design? Copy a cool site’s layout.  Want to learn piano? Play Mozart. ",""],
-    ["There is a limit to testing.  It won’t get you to revolutionary change, but it can get you to emulative change.",""],
+    ["To get good at a new thing, copy something you admire.  Want to paint? Copy picasso. Want to code? Recreate google calendar. Want to learn web design? Copy a well designed web layout.  Want to learn piano? Play Mozart.",""],
     ["What is the work you can’t not do?",""],
     ["Compound effort moves mountains.",""],
-    ["If you're not failing, you're not trying hard enough.",""],
+    ["If you are not failing, you are not trying hard enough.",""],
     ["Seize the moment.",""],
     ["zest: have great enthusiasm and energy; grit: keep resolve when faced with unpleasant duty or task; self-control: mastering one’s impulses; social intelligence: get along well with others, and have them coordinate with you; gratitude: express thanks to those who have benefited you; optimism: expect good things; curiosity: explore the unknown with relish.",""],
-    ["Don't get so fond of where you've been that you loose sight of where you're going.",""],
+    ["Do not get so fond of where you've been that you loose sight of where you're going.",""],
     ["Stick to your plan. It works.",""],
     ["Never let your persistence and passion turn into stubbornness and ignorance.","-Anthony J. D'Angelo"],
     ["Nothing in this world can take the place of persistence. Talent will not; nothing is more common than unsuccessful people with talent. Genius will not; unrewarded genius is almost a proverb. Education will not; the world is full of educated failures. Persistence and determination alone are omnipotent.","-Calvin Coolidge"],
     ["Keep away from people who belittle your ambitions. Small people always do that, but the really great make you feel that you, too, can become great.","-Mark Twain"],
-    ["Nobody's a natural. You work hard to get good and then work to get better. It's hard to stay on top.","-Paul Coffey, NHL Star"],
+    ["Nobody is a natural. You work hard to get good and then work to get better. It's hard to stay on top.","-Paul Coffey, NHL Star"],
     ["Thankfully, perseverance is a good substitute for talent.","-Steve Martin"],
     ["The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of determination.","-Vince Lombardi"],
     ["Adhere to your purpose and you will soon feel as well as you ever did. On the contrary, if you falter, and give up, you will lose the power of keeping any resolution, and will regret it all your life.","-Abraham Lincoln"],
@@ -128,16 +112,15 @@ var advice = [
     ["If today was the last day of your life, how would you be spending it?",""],
     ["Smile. Rigt now--smile. Seriously. Isn't that better?",""],
     ["You've come a long way, baby.",""],
+    ["Be bold, be brief, leave.",""],
     //["",""],
 ];
-
 
 //retrieves a random bit of advise from the array of arrays 'advise'
 //returns an array with two elements
 function getAdvice(){
     var random = Math.random() * advice.length;
     random = Math.floor(random);
-    //alert(advice[random]);
     formattedAdvice = advice[random][0] + '<br>' + advice[random][1];
     return formattedAdvice;
 }
