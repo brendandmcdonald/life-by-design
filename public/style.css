@@ -10,6 +10,10 @@ img{
 }
 h3{}
 
+#hero-header{
+	color: black;
+}
+
 #focus-directions{
 	display: none;
 }

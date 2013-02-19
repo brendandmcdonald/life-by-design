@@ -47,6 +47,9 @@ function processForm2() {
     document.getElementById("more").innerHTML += listed;
 }
 
+
+
+
 //this seems to only work if the item input is numeric
 function crossedOut(item) {
 	document.getElementById(item).className = "checked-off";
