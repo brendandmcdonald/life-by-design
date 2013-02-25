@@ -43,6 +43,8 @@ get '/quotes' do
 	File.read(File.join('public', 'quotes.html'))
 end
 
+=begin
 get '/topiary' do
 	"that's a kind of tree, right?"
 end
+=end
