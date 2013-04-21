@@ -61,13 +61,13 @@ a{
 	/*border: solid black 1px;*/
 	} 
 
-#how{
+#process{
 	clear: both;
 	padding-top: 25px;
 	max-width: 600px;
 }
 
-#how_displayText {
+#process_directions {
 	display: none;
 }
 

@@ -5,10 +5,17 @@
 
 $(document).ready(function(){
 
-    //hides or shows focus directions if header is moused over
+    //hides or shows focus directions if header is clicked
     $('#focus-header').click(function(){
         $('#focus-directions').fadeToggle('fast'); //o('fast', .5);
     });
+
+    //hides or shows process directions (on index.html) if clicked
+    $('#process-header').click(function(){
+        $('#process-directions').fadeToggle('fast');
+    });
+
+
 });
 
 
@@ -116,6 +123,8 @@ var advice = [
     ["Smile. Rigt now--smile. Seriously. Isn't that better?",""],
     ["You've come a long way, baby.",""],
     ["Be bold, be brief, leave.",""],
+    ["Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.","-Rumi"],
+    ["Out beyond ideas of wrongdoing and rightdoing there is a field. I'll meet you there. When the soul lies down in that grass the world is too full to talk about","-Rumi"],
     //["",""],
 ];
 
