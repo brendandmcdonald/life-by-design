@@ -4,7 +4,7 @@ require 'sinatra'#remove this for heroku production; prostgres instead
 #requrie 'pg'
 
 get '/' do
-	File.read(File.join('public', 'index.html'))
+	File.read(File.join('public', 'trello.html'))
 end
 
 get '/quotes' do

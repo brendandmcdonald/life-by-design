@@ -14,70 +14,23 @@ $(document).ready(function(){
     $('#process-header').click(function(){
         $('#process-directions').fadeToggle('fast');
     });
-
-
 });
-
-
-var i = 0;
-
-function processForm() {
-
-    i++;
-    var listItem = document.priority.priority1.value;
-	
-	var listed = '<div id="item' + i + '"><input type="checkbox" onclick="crossedOut(\'item'+ i + '\')" />' + listItem + '</div>';
-
-	document.getElementById("checkList").innerHTML += listed;
-	i++;
-	//addition of priority2
-    var listItem2 = document.priority.priority2.value;
-    var listed2 = '<div id="item' + i + '"><input type="checkbox" onclick="crossedOut(\'item'+ i + '\')" />' + listItem2 + '</div>';
-    document.getElementById("checkList").innerHTML += listed2;
-    i++;
-    //addition of priority3
-    var listItem3 = document.priority.priority3.value;
-    var listed3 = '<div id="item' + i + '"><input type="checkbox" onclick="crossedOut(\'item'+ i + '\')" />' + listItem3 + '</div>';
-    document.getElementById("checkList").innerHTML += listed3;
-}
-
-//for the easy wins portion
-var z = 0;
-
-function processForm2() {
-
-    z++;
-    var listItem = document.newWin.winDescription.value;
-    
-    var listed = '<div id="item' + z + '"><input type="checkbox" onclick="crossedOut(\'item'+ i + '\')" />' + listItem + '</div>';
-
-    document.getElementById("more").innerHTML += listed;
-}
-
-
-
-
-//this seems to only work if the item input is numeric
-function crossedOut(item) {
-	document.getElementById(item).className = "checked-off";
-}
-
-//show/hide a div section
-function toggleText() {
-    var ele = document.getElementById("how_toggleText");
-    var text = document.getElementById("how_displayText");
-    if(text.style.display !== "none") {
-        text.style.display = "none";
-    }
-    else{
-        text.style.display = "block";
-    }
-}
 
 function displayAdvice(){
     var adviceToDisplay = getAdvice();
     document.getElementById('advice').innerHTML = adviceToDisplay;
+}
 
+//retrieves a random bit of advise from the array of arrays 'advise'
+//returns an array with two elements
+function getAdvice(){
+    var random = Math.random() * advice.length;
+    random = Math.floor(random);
+    var formattedAdvice = '';
+    for (var i=0;i<advice[random].length;i++){ 
+        formattedAdvice = formattedAdvice + advice[random][i] + '<br>';
+    }
+    return formattedAdvice;
 }
 
 //a list of advice that I will want to display randomly
@@ -98,7 +51,7 @@ var advice = [
     ["Compound effort moves mountains.",""],
     ["If you are not failing, you are not trying hard enough.",""],
     ["Seize the moment.",""],
-    ["zest: have great enthusiasm and energy; grit: keep resolve when faced with unpleasant duty or task; self-control: mastering one’s impulses; social intelligence: get along well with others, and have them coordinate with you; gratitude: express thanks to those who have benefited you; optimism: expect good things; curiosity: explore the unknown with relish.",""],
+    ["zest: have great enthusiasm and energy","grit: keep resolve when faced with unpleasant duty or task","self-control: mastering one’s impulses","social intelligence: get along well with others, and have them coordinate with you","gratitude: express thanks to those who have benefited you","optimism: expect good things","curiosity: explore the unknown with relish.",""],
     ["Do not get so fond of where you've been that you loose sight of where you're going.",""],
     ["Stick to your plan. It works.",""],
     ["Never let your persistence and passion turn into stubbornness and ignorance.","-Anthony J. D'Angelo"],
@@ -127,12 +80,3 @@ var advice = [
     ["Out beyond ideas of wrongdoing and rightdoing there is a field. I'll meet you there. When the soul lies down in that grass the world is too full to talk about","-Rumi"],
     //["",""],
 ];
-
-//retrieves a random bit of advise from the array of arrays 'advise'
-//returns an array with two elements
-function getAdvice(){
-    var random = Math.random() * advice.length;
-    random = Math.floor(random);
-    formattedAdvice = advice[random][0] + '<br>' + advice[random][1];
-    return formattedAdvice;
-}

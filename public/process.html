@@ -24,7 +24,6 @@
                 <a href="/quotes">quotes</a>
                 <a target="blank" href="https://github.com/brendandmcdonald">github</a>
                 <a target="blank" href="https://www.google.com/contacts/u/1/?hl=en&tab=oC#contacts">contacts</a>
-                <a href="/process">process</a>
             </div>
         </div>
 
@@ -50,36 +49,73 @@
         <div id='advice'></div> 
 
 
-        <h3>Morning easy wins</h3>
-        <ol>
-            <li>do 15 jumping jacks</li>
-            <li>clean room for day</li>
-            <li>write in thankfulness journal</li>
-            <li>read Daily Checklist</li>                
-            <li>plan out day: personal top 3 (always ranks above intuit)</li>
-            <li>plan out day: intuit top 3 (always ranks below personal)</li>
-            <li>make video or journal entry: daily success plan</li>
-            <li>make list of 10 easy wins for the day</li>
-            <li>brush and floss teeth</li>
-        </ol>    
+        <div id="morning">
 
-        <h3>Easy wins</h3>
-        <ol>
-            <li>shower</li>
-            <li>5 exercises on codecademy</li>
-            <li>exercise</li>
-            <li>connect with 5 people daily (email, SMS, phone, at least 2 in person)</li>
-            <li>make video or journal entry: day in review</li>
-            <li>connect with someone you care about (friend, family member)</li>
-        </ol>
+            <h3>Morning Easy Wins</h3>
+            
+            <div id="1">
+                <input type="checkbox" onclick="crossedOut(1)">do 15 jumping jacks
+            </div>
+            <div id="2">
+                <input type="checkbox" onclick="crossedOut(2)">clean room for day
+            </div>  
+            <div id="3">
+                <input type="checkbox" onclick="crossedOut(3)">write in thankfulness journal
+            </div>  
+            <div id="4">
+                <input type="checkbox" onclick="crossedOut(4)">read Daily Checklist
+            </div>    
+            <div id="5">
+                <input type="checkbox" onclick="crossedOut(5)">plan out day: personal top 3 (always ranks above intuit)
+            </div>  
+            <div id="6">
+                <input type="checkbox" onclick="crossedOut(6)">plan out day: intuit top 3 (always ranks below personal)
+            </div>  
+            <div id="7">
+                <input type="checkbox" onclick="crossedOut(7)">make video or journal entry: daily success plan
+            </div>  
+            <div id="8">
+                <input type="checkbox" onclick="crossedOut(8)">make list of 10 easy wins for the day
+            </div>
+                
+        </div>    
 
+        <div id="today">
 
-        <h3>Night easy wins</h3>
-        <ol>
-            <li>brush and floss teeth</li>
-            <li>reset board</li>
-        </ol>
+            <h3>Easy Wins</h3>
 
+            <div id="10">
+                <input type="checkbox" onclick="crossedOut(10)">shower
+            </div>
+            <div id="11">
+                <input type="checkbox" onclick="crossedOut(11)">brush & floss teeth: am
+            </div>
+            <div id="12">
+                <input type="checkbox" onclick="crossedOut(12)">apply morning acne creams
+            </div>
+            <div id="13">
+                <input type="checkbox" onclick="crossedOut(13)">do 5 exercises on codecademy
+            </div>
+            <div id="14">
+                <input type="checkbox" onclick="crossedOut(14)">exercise
+            </div>
+            <div id="15">
+                <input type="checkbox" onclick="crossedOut(15)">apply evening acne creams
+            </div>
+            <div id="16">
+                <input type="checkbox" onclick="crossedOut(16)">brush & floss teeth: pm
+            </div>
+            <div id="17">
+                <input type="checkbox" onclick="crossedOut(17)">connect with 5 people every day (email, text, phone, at least 2 in person)
+            </div>
+            <div id="18">
+                <input type="checkbox" onclick="crossedOut(18)">make video or journal entry: day in review
+            </div>
+            <div id="19">
+                <input type="checkbox" onclick="crossedOut(19)">connect with someone you care about (friend, family member)
+            </div>
+            <div id="more">
+            </div>
             <form name="newWin">
               <input type="text" value="new easy win" name="winDescription">
               <input type="button" value="submit" onclick="processForm2()">
