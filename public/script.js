@@ -1,21 +1,3 @@
-//functionality:    hide/show sections of the site
-//                  hide/show directions
-//                  show one of a list of quotes to live by
-//                  save changes to database so I can access updated list anywhere 
-
-$(document).ready(function(){
-
-    //hides or shows focus directions if header is clicked
-    $('#focus-header').click(function(){
-        $('#focus-directions').fadeToggle('fast'); //o('fast', .5);
-    });
-
-    //hides or shows process directions (on index.html) if clicked
-    $('#process-header').click(function(){
-        $('#process-directions').fadeToggle('fast');
-    });
-});
-
 function displayAdvice(){
     var adviceToDisplay = getAdvice();
     document.getElementById('advice').innerHTML = adviceToDisplay;
@@ -63,7 +45,6 @@ function previousAdvice(){
     }
     document.getElementById('advice').innerHTML = formattedAdvice;
 }
-
 
 //a list of quotes and advice I want to display randomly or deliberately 
 var advice = [
