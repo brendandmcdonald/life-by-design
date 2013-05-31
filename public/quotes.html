@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Cookie. Monster.</title>
+        <title>Quotes</title>
         <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css"> 
         <link rel="stylesheet" href="style.css"/>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
@@ -26,8 +26,12 @@
                 <a target="blank" href="https://www.google.com/contacts/u/1/?hl=en&tab=oC#contacts">contacts</a>
             </div>
         </div>
-
-    	<h4><a onclick='displayAdvice()'>Thoughtful Quotes</a></h4>
+        
         <div id='advice'></div> 
+        <h4><a onclick='previousAdvice()'><</a>
+            <a onclick='getAdvice()'>?</a>
+            <a onclick='nextAdvice()'>></a>
+        </h4>
+        <h4><div id='error'></div></h4>
     </body>
 </html>

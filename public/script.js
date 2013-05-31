@@ -21,8 +21,8 @@ function displayAdvice(){
     document.getElementById('advice').innerHTML = adviceToDisplay;
 }
 
-//retrieves a random bit of advise from the array of arrays 'advise'
-//returns an array with two elements
+var adviceIndex = 0;
+
 function getAdvice(){
     var random = Math.random() * advice.length;
     random = Math.floor(random);
@@ -30,10 +30,42 @@ function getAdvice(){
     for (var i=0;i<advice[random].length;i++){ 
         formattedAdvice = formattedAdvice + advice[random][i] + '<br>';
     }
-    return formattedAdvice;
+    adviceIndex = random;
+    document.getElementById('advice').innerHTML = formattedAdvice;
 }
 
-//a list of advice that I will want to display randomly
+//return the next element from the advice array
+function nextAdvice(){
+    if(adviceIndex < advice.length){
+        adviceIndex = adviceIndex + 1;
+    }
+    else{
+        adviceIndex = 0;
+    }
+    var formattedAdvice = '';
+    for (var i=0;i<advice[adviceIndex].length;i++){ 
+        formattedAdvice = formattedAdvice + advice[adviceIndex][i] + '<br>';
+    }
+    document.getElementById('advice').innerHTML = formattedAdvice;
+}
+
+//return the previous element from the advice array
+function previousAdvice(){
+    if(adviceIndex === 0){
+        adviceIndex = advice.length - 1;
+    }
+    else{
+        adviceIndex = adviceIndex - 1;
+    }
+    var formattedAdvice = '';
+    for (var i=0;i<advice[adviceIndex].length;i++){ 
+        formattedAdvice = formattedAdvice + advice[adviceIndex][i] + '<br>';
+    }
+    document.getElementById('advice').innerHTML = formattedAdvice;
+}
+
+
+//a list of quotes and advice I want to display randomly or deliberately 
 var advice = [
     ["Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are already naked. There is no reason not to follow your heart.", '-Steve Jobs'],
     ['Excellence is not an act, but a habit', '-Aristotle'],
@@ -51,8 +83,7 @@ var advice = [
     ["Compound effort moves mountains.",""],
     ["If you are not failing, you are not trying hard enough.",""],
     ["Seize the moment.",""],
-    ["zest: have great enthusiasm and energy","grit: keep resolve when faced with unpleasant duty or task","self-control: mastering one’s impulses","social intelligence: get along well with others, and have them coordinate with you","gratitude: express thanks to those who have benefited you","optimism: expect good things","curiosity: explore the unknown with relish.",""],
-    ["Do not get so fond of where you've been that you loose sight of where you're going.",""],
+    ["zest: have great enthusiasm and energy","grit: keep resolve when faced with unpleasant duty or task","self-control: mastering one’s impulses","social intelligence: get along well with others, and have them coordinate with you","gratitude: express thanks to those who have benefited you","optimism: expect good things","curiosity: explore the unknown with relish."],
     ["Stick to your plan. It works.",""],
     ["Never let your persistence and passion turn into stubbornness and ignorance.","-Anthony J. D'Angelo"],
     ["Nothing in this world can take the place of persistence. Talent will not; nothing is more common than unsuccessful people with talent. Genius will not; unrewarded genius is almost a proverb. Education will not; the world is full of educated failures. Persistence and determination alone are omnipotent.","-Calvin Coolidge"],
@@ -71,7 +102,7 @@ var advice = [
     ["Here is the prime condition of success: Concentrate your energy, thought and capital exclusively upon the business in which you are engaged. Having begun on one line, resolve to fight it out on that line, to lead in it, adopt every improvement, have the best machinery, and know the most about it.","-Andrew Carnegie"],
     ["You are the average of the 5 people you spend the most time with.",""],
     ["On choices: what is most likely to change your life in a good way?","~"],
-    ["Don't give a fuck--break social norms often, cultivate discomfort, stretch yourself. What you fear to do is what you must do.",""],
+    ["DEGAF. Break social norms often, cultivate discomfort, stretch yourself. What you fear to do is what you must do.",""],
     ["If today was the last day of your life, how would you be spending it?",""],
     ["Smile. Rigt now--smile. Seriously. Isn't that better?",""],
     ["You've come a long way, baby.",""],

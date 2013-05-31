@@ -1,1 +1,3 @@
-I wish to live deliberately, so I created a lightweight web app that helps me do just that.
+A lightweight app to help me live deliberately.
+
+-Brendan, May 2013
