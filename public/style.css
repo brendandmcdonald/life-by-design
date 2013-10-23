@@ -1,14 +1,29 @@
 body{
 	padding: 5px; 
 	font-family: sans-serif; 
+	/*background-image: url('retina_wood.png');*/
 	/*border: solid black 1px;*/
-}
+
+	/* Background gradient, a CSS3 trick (though I don't know about my syntax)*/
+	
+ 	/* fallback/image non-cover color */
+	background-color: #2F2727; 
+   	/* Safari 4+, Chrome 1-9 */
+   	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#737144), to(#2F2727));
+   	/* Safari 5.1+, Mobile Safari, Chrome 10+ */
+   	background-image: -webkit-linear-gradient(left, #53ED84, #5C7A3D); 
+   	/* Firefox 3.6+ */
+   	background-image: -moz-linear-gradient(left, #737144, #2F2727);
+   	/* IE 10+ */
+   	background-image: -ms-linear-gradient(left, #737144, #2F2727);
+   	/* Opera 11.10+ */
+   	background-image: -o-linear-gradient(left, #737144, #2F2727);
+}   
 
 img{
 	float:  left;
 	border: solid black 1px;
 }
-h3{}
 
 #hero-header{
 	color: black;
@@ -27,57 +42,3 @@ h3{}
 a{
 	padding: 5px;
 }
-
-.not-checked-off{
-	text-decoration: none;
-	color: default;
-}
-
-#focus{
-	padding: 5px;
-	/*border: solid black 1px;*/
-}
-
-#checkList{
-	font-size: 150%;
-	line-height: 155%;
-}
-
-#morning{
-	padding: 0px 5px;
-	float: left;
-	margin-right: 10px;
-	/*border: solid black 1px;*/
-}
-
-#morning.h2, #today.h2{
-	text-decoration: none;
-}
-
-#today{
-	padding: 0px 5px;
-	float: left;
-	/*border: solid black 1px;*/
-	} 
-
-#process{
-	clear: both;
-	padding-top: 25px;
-	max-width: 600px;
-}
-
-#process_directions {
-	display: none;
-}
-
-#advice{
-	padding: 10px;
-	font-size: 90%;
-	color: gray;
-	max-width: 500px;
-}
-
-/* div, li{
-	/*border: solid black 1px;
-} */
-
