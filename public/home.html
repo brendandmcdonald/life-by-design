@@ -10,6 +10,11 @@
     </head>
 
     <body>
+        <!-- Site Goals:
+        1. Elevate important content on the web that makes me live deliberately
+        2. Have fun playing with technology
+        -->  
+
 
         <!-- Site Navigation -->   
         <div id="header">
@@ -17,15 +22,19 @@
             <div id="links">
                 <a target="blank" href="https://docs.google.com/document/d/1Yn6DXkj_hQJPQkfWm0qgfiOvI7MRMBaSQqxPXFzhaCw/edit">journal</a>
                 <a target="blank"href="https://docs.google.com/document/d/1LFdVOQgrQo9ZlI-7Hh3JTS7ioReUfik9KlCUnnz2xyE/edit">give thanks</a>
-                <a target="blank" href="https://docs.google.com/document/d/1orabm7FJ6uOgBzB_TK0AxdoKT7pn5ssyYN7Df8dna5I/edit">small act of kindness</a>
-                <a target="blank" href="https://www.google.com/calendar/render">calendar</a>
-                <a href="/blog">blog</a>
-                <a href="/codecademy">codecademy</a>
-                <a href="/jquery">jquery</a>
-                <a href="/quotes">quotes</a>
-                <a target="blank" href="https://github.com/brendandmcdonald">github</a>
+                <a target="blank" href="https://docs.google.com/document/d/1orabm7FJ6uOgBzB_TK0AxdoKT7pn5ssyYN7Df8dna5I/edit">do for others</a>
+                <a target="blank" href="http://www.brendandmcdonald.com/">blog</a>
+                <a target="blank" href="http://www.codecademy.com/learn">codecademy</a>
                 <a target="blank" href="https://www.google.com/contacts/u/1/?hl=en&tab=oC#contacts">contacts</a>
             </div>
+        </div>
+
+        <!-- Quote area -->  
+        <div id="quote">
+            <a id='left' onclick='previousAdvice()'><</a>
+            <a id='random' onclick='getAdvice()'>?</a>
+            <a id='right' onclick='nextAdvice()'>></a>
+             <div id='advice'></div> 
         </div>
 
     </body>

@@ -1,8 +1,11 @@
+/**{
+	border: 1px dashed #090988;
+}*/
+
 body{
 	padding: 5px; 
 	font-family: sans-serif; 
 	/*background-image: url('retina_wood.png');*/
-	/*border: solid black 1px;*/
 
 	/* Background gradient, a CSS3 trick (though I don't know about my syntax)*/
 	
@@ -25,20 +28,40 @@ img{
 	border: solid black 1px;
 }
 
-#hero-header{
-	color: black;
-}
-
-#focus-directions{
-	display: none;
-}
-
-/* for completed (crossed out) items on to-do lists*/
-.checked-off{
-    text-decoration: line-through;
-    color: gray;
-}
-
 a{
 	padding: 5px;
+	text-decoration: none;
+}
+
+h1{
+	margin: 10px 0px 10px 0px;
+}
+
+a:hover{
+	color: #dddddd;
+}
+
+#quote{
+	min-height: 300px;
+}
+
+#left{
+	min-height: 100%;
+	display: inline-block;
+	/* background: blue; */
+}
+
+#right{
+	display: inline-block;
+	/* background: blue; */
+}
+
+#advice{
+	display: block;
+	max-width: 500px;
+	/* background: red; */
+}
+
+#random{
+	/* background: yellow; */
 }
