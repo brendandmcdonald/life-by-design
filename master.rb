@@ -7,6 +7,10 @@ get '/' do
 	File.read(File.join('public', 'home.html'))
 end
 
+get '/test' do
+	File.read(File.join('public', 'test.html'))
+end
+
 =begin
 get '/quotes' do
 	File.read(File.join('public', 'quotes.html'))

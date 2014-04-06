@@ -5,10 +5,9 @@
 body{
 	padding: 5px; 
 	font-family: sans-serif; 
-	/*background-image: url('retina_wood.png');*/
 
 	/* Background gradient, a CSS3 trick (though I don't know about my syntax)*/
-	
+
  	/* fallback/image non-cover color */
 	background-color: #2F2727; 
    	/* Safari 4+, Chrome 1-9 */
