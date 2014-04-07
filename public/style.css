@@ -27,8 +27,11 @@ a{
 	text-decoration: none;
 }
 
-ul{
+nav,ul{
 	list-style-type: none;
+	text-decoration: none;
+	padding: none;
+	margin: none;
 }
 
 h1{
