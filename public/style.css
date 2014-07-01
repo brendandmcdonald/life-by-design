@@ -5,45 +5,34 @@
 body{
 	padding: 5px; 
 	font-family: sans-serif; 
+}
 
 	/* Background gradient, a CSS3 trick (though I don't know about my syntax)*/
 
- 	/* fallback/image non-cover color */
-	background-color: #2F2727; 
-   	/* Safari 4+, Chrome 1-9 */
-   	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#737144), to(#2F2727));
-   	/* Safari 5.1+, Mobile Safari, Chrome 10+ */
-   	background-image: -webkit-linear-gradient(left, #53ED84, #5C7A3D); 
-   	/* Firefox 3.6+ */
-   	background-image: -moz-linear-gradient(left, #737144, #2F2727);
-   	/* IE 10+ */
-   	background-image: -ms-linear-gradient(left, #737144, #2F2727);
-   	/* Opera 11.10+ */
-   	background-image: -o-linear-gradient(left, #737144, #2F2727);
-}   
+
+
+/* full image background */
+html { 
+background: url(images/bg.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+/*----------end full image background----------------*/
 
 a{
 	padding: 5px;
 	text-decoration: none;
 }
 
-nav,ul{
-	list-style-type: none;
-	text-decoration: none;
-	padding: none;
-	margin: none;
-}
-
 h1{
 	margin: 10px 0px 10px 0px;
 }
 
-a:hover{
-	color: #dddddd;
-}
-
 #quote{
-	min-height: 300px;
+	/*min-height: 100px;*/
 }
 
 #left{
@@ -58,4 +47,27 @@ a:hover{
 #advice{
 	display: block;
 	max-width: 500px;
+}
+
+.navbar{
+ 	/* fallback/image non-cover color */
+	background-color: #2F2727; 
+   	/* Safari 4+, Chrome 1-9 */
+   	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#737144), to(#2F2727));
+   	/* Safari 5.1+, Mobile Safari, Chrome 10+ */
+   	background-image: -webkit-linear-gradient(left, #53ED84, #5C7A3D); 
+   	/* Firefox 3.6+ */
+   	background-image: -moz-linear-gradient(left, #737144, #2F2727);
+   	/* IE 10+ */
+   	background-image: -ms-linear-gradient(left, #737144, #2F2727);
+   	/* Opera 11.10+ */
+   	background-image: -o-linear-gradient(left, #737144, #2F2727);
+}   
+
+.navbar :hover{
+	color: blue;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: #ffffff;
 }
