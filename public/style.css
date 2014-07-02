@@ -7,12 +7,8 @@ body{
 	font-family: sans-serif; 
 }
 
-	/* Background gradient, a CSS3 trick (though I don't know about my syntax)*/
-
-
-
 /* full image background */
-html { 
+html, body { 
 background: url(images/bg.jpg) no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -33,6 +29,8 @@ h1{
 
 #quote{
 	/*min-height: 100px;*/
+	float: left;
+
 }
 
 #left{
@@ -49,6 +47,7 @@ h1{
 	max-width: 500px;
 }
 
+/*-----make navbar do green gradient-----*/
 .navbar{
  	/* fallback/image non-cover color */
 	background-color: #2F2727; 
@@ -64,9 +63,23 @@ h1{
    	background-image: -o-linear-gradient(left, #737144, #2F2727);
 }   
 
-.navbar :hover{
-	color: blue;
+/*-----make navbar transparent-----*/
+.navbar{
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
 }
+
+/*-----make navbar transparent 2-----*/
+
+.navbar{
+	background-color: rgba(0,0,0,0.2);
+}
+
 
 .navbar-default .navbar-nav>li>a{
 	color: #ffffff;
