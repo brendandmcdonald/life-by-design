@@ -137,5 +137,10 @@ var advice = [
 ["Whatever you are, be a good one.","Abraham Lincoln"],
 ["You yourself, as much as anybody in the entire universe, deserve your love and affection.","Buddha"],
 ["Time you enjoy wasting is not wasted time.","Marthe Troly-Curtin"],
-    //["",""],
+["If you are going to eat shit, don’t nibble.","Ben Horowitz"],
 ];
+
+//display advice onload
+$(document).ready(function() {
+    getAdvice();
+});
