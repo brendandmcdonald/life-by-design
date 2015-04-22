@@ -10,8 +10,8 @@ $(document).ready(function() {
     var path = 'images/';
 
     // then you can put it right before the variable 'bg'
-    $('body').css('background', path+bg);
-
+    //$('body').css('background', path+bg);
+    $('body').css('background', 'images/1.jpg')
 }); 
 
 function displayAdvice(){
