@@ -1,18 +1,4 @@
-//autoload background images
-$(document).ready(function() {
 
-    var bgArray = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg'];
-    var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
-
-    //$('body').css('background', bg);
-
-    // If you have defined a path for the images
-    var path = 'images/';
-
-    // then you can put it right before the variable 'bg'
-    //$('body').css('background', path+bg);
-    $('body').css('background', 'images/1.jpg')
-}); 
 
 function displayAdvice(){
     var adviceToDisplay = getAdvice();
