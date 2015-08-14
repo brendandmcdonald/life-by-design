@@ -120,8 +120,7 @@ var advice = [
     ["Change your thoughts and you change your world.","Norman Vincent Peale"],
     ["Just keep going. Everybody gets better if they keep at it.","Ted Williams"],
     ["Choosing a goal and sticking to it changes everything.","Scott Reed"],
-    ["The fastest way to do what you think can’t be done is to hang out with those who are already doing it:","Surround yourself with passionate people doing what you want to do.
-"],
+    ["The fastest way to do what you think can’t be done is to hang out with those who are already doing it:","Surround yourself with passionate people doing what you want to do."],
 	["If you’re not making progress, narrow your focus. How small can you make an increment of progress?"],
     ["The creation of a thousand forests is in one acorn.","Ralph Waldo Emerson"],
     ["Every time you state what you want or believe, you’re the first to hear it. It’s a message to both you and others about what you think is possible. Don’t put a ceiling on yourself.","Oprah Winfrey"],
@@ -141,8 +140,7 @@ var advice = [
     ["Keep your face to the sunshine and you can never see the shadow.","Helen Keller"],
     ["Dream big and dare to fail.","Narman Vaughan"],
     ["Be yourself. Everyone else is taken.","Oscar Wilde"],
-    ["We have more control over our actions than we do on our thoughts and feelings.","Expect to act one way and feel another all the time. The disconnect between how you act and feel may diminish over time.", "Focus on your actions, not your emotions, feelings or thoughts. You may acknowledge those things but it is action repeated that will advance your mission and purpose. 
-"],
+    ["We have more control over our actions than we do on our thoughts and feelings.","Expect to act one way and feel another all the time. The disconnect between how you act and feel may diminish over time.", "Focus on your actions, not your emotions, feelings or thoughts. You may acknowledge those things but it is action repeated that will advance your mission and purpose."],
     ["Art is a lie that helps us see the truth.","Picasso"],
     ["No goals for more than 90 days.",""],
     ["Do not become a seeker of success. Become a person of value.", "Albert Einstein"],
@@ -153,6 +151,7 @@ var advice = [
     ["You yourself, as much as anybody in the entire universe, deserve your love and affection.","Buddha"],
     ["Time you enjoy wasting is not wasted time.","Marthe Troly-Curtin"],
     ["If you are going to eat shit, don’t nibble.","Ben Horowitz"],
+    ["If you're suffering, it's because you're forgetting who you are.", "Buddha"]
 ];
 
 //display advice onload
