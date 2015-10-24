@@ -4,13 +4,15 @@
 
 body{
 	padding: 5px; 
-	font-family: sans-serif; 
+	font-family: 'Vollkorn', serif;
+	line-height: 150%;
+
 }
 
 /* full image background */
 
 html, body { 
-background: url(https://unsplash.com/photos/oQmKteV2yBA) no-repeat center center fixed; 
+background: url(https://images.unsplash.com/photo-1445384153502-5b921b006ee2?q=80&fm=jpg&w=1080&fit=max&s=dc4ae2b19fd454bcdab013500fb8b584) no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
