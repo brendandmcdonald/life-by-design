@@ -19,7 +19,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
-    <title>LxD. Do the thing.</title>
+    <title>Do the thing.</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -28,8 +28,6 @@
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
 	
-	<!-- Custom script -->
-    <script type="text/javascript" src="script.js"></script>
   </head>
 
   <body>
@@ -42,28 +40,24 @@
 
           <div class="masthead clearfix">
             <div class="inner">
+              <!--
               <h3 class="masthead-brand">LxD</h3>
+              -->
               <nav>
                 <ul class="nav masthead-nav">
                   <!--
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Dangerous</a></li>
+                  <li><a id='random' onclick='getAdvice()'>Forward</a></li>
                   -->
-                  <li><a id='random' onclick='getAdvice()'>SuperFree</a></li>
+                  
                 </ul>
               </nav>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading" id='advice'></h1>
-            <p class="lead">
-            </p>
-
-              <!--
-              <a id='random' onclick='getAdvice()' class="btn btn-lg btn-default">Another Quote</a>
-              -->
-            </p>
+          	<div id="advice"></div>
           </div>
 
           
@@ -71,13 +65,13 @@
           <div class="mastfoot">
             <div class="inner">
               <p>
-              	Do the thing. Consider updating your <a href="http://brendandmcdonald.com">blog</a>.
+              	Load <a onclick='getAdvice()'>advice</a> on living deliberately.
               </p>
               <!--
               <p>
-              	<a id='left' onclick='previousAdvice()'><</a>
-            	<a id='random' onclick='getAdvice()'>!</a>
-            	<a id='right' onclick='nextAdvice()'>></a>
+              	<a onclick='previousAdvice()'><</a>
+            	<a onclick='getAdvice()'>!</a>
+            	<a onclick='nextAdvice()'>></a>
               </p>
               -->
             </div>
@@ -96,5 +90,8 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Custom script -->
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
