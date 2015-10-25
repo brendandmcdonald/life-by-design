@@ -1,79 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-    <head>
-    	<!--Typography via Google Fonts-->
-    	<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-        <title>LxD | Live deliberately. Fail frequently.</title>
 
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-			*/
-        </script>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-        <!--Bootstrap via bootstrapcdn.com-->
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
 
-        <!--custom stylesheet and js-->
-        <script type="text/javascript" src=script.js></script>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
-    <body>
+    <title>LxD. Do the thing.</title>
 
-        <div class="container-fluid">
 
-            <!--
-            *******************************************************
-            Navbar template from bootstrap http://getbootstrap.com/components/#navbar
-            *******************************************************
-            -->
-            <nav class="navbar navbar-default" role="navigation">
-              <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">LxD</a>
-                </div>
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+	
+	<!-- Custom script -->
+    <script type="text/javascript" src="script.js"></script>
+  </head>
 
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a target="blank" href="https://trello.com/">progress</a></li>
-                    <li><a target="blank" href="https://www.google.com/calendar/">map out day</a></li>
-                    <li><a target="blank" href="https://www.lift.do/dashboard/23304/instructions/500730">build habits</a></li>
-                    <li><a target="blank" href="https://app.asana.com/0/32017511700845/32017511700845">asana</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">habits <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a target="blank" href="https://docs.google.com/document/d/1Yn6DXkj_hQJPQkfWm0qgfiOvI7MRMBaSQqxPXFzhaCw/edit">journal</a></li>
-                        <li><a target="blank"href="https://docs.google.com/document/d/1LFdVOQgrQo9ZlI-7Hh3JTS7ioReUfik9KlCUnnz2xyE/edit">give thanks</a></li>
-                        <li><a target="blank" href="https://docs.google.com/document/d/1orabm7FJ6uOgBzB_TK0AxdoKT7pn5ssyYN7Df8dna5I/edit">do for others</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
-            </nav>
-            
-           
-                    <!-- Quote area -->  
+  <body>
 
-            <div id="quote">
-            	<div class="center-block" style="width:400px">
-                	<a id='left' onclick='previousAdvice()'><</a>
-                	<a id='random' onclick='getAdvice()'>?</a>
-                	<a id='right' onclick='nextAdvice()'>></a>
-                	<div id='advice'></div> 
-                </div>	
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">LxD</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <!--
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Dangerous</a></li>
+                  -->
+                  <li><a id='random' onclick='getAdvice()'>SuperFree</a></li>
+                </ul>
+              </nav>
             </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading" id='advice'></h1>
+            <p class="lead">
+            </p>
+
+              <!--
+              <a id='random' onclick='getAdvice()' class="btn btn-lg btn-default">Another Quote</a>
+              -->
+            </p>
+          </div>
+
+          
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>
+              	Do the thing. Consider updating your <a href="http://brendandmcdonald.com">blog</a>.
+              </p>
+              <!--
+              <p>
+              	<a id='left' onclick='previousAdvice()'><</a>
+            	<a id='random' onclick='getAdvice()'>!</a>
+            	<a id='right' onclick='nextAdvice()'>></a>
+              </p>
+              -->
+            </div>
+          </div>
+
         </div>
-    </body
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
